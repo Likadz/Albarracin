@@ -1,0 +1,362 @@
+/* variables */
+
+:root {
+    --header-separator-color: #177E89; 
+    --text-color: #323031; 
+  }
+/* /variables */
+*{
+    color:var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+}
+body{
+    margin: auto;
+}
+a, a:focus, a:active a:visited {
+    text-decoration:none;
+    color:var(--text-color);
+}
+a:hover {
+    text-decoration:none;
+}
+ 
+.portada{ /* background del menú cuando hover */
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    display:none;
+    bottom:0px;
+    right: 0;
+}
+
+.header{
+    display:flex;
+    margin: 0;
+    height: 8em;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 5px 6px black;
+margin-bottom: 140px;
+background: rgba(32,136,167,1);
+background: -moz-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,136,167,1)), color-stop(93%, rgba(255,255,255,0.94)), color-stop(100%, rgba(255,255,255,0.94)));
+background: -webkit-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
+background: -o-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
+background: -ms-linear-gradient(top, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
+background: linear-gradient(to bottom, rgba(32,136,167,1) 0%, rgba(255,255,255,0.94) 93%, rgba(255,255,255,0.94) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2088a7', endColorstr='#ffffff', GradientType=0 );
+}
+
+.headerLogo{
+    
+    flex-grow: 1;
+    overflow: inherit;
+}
+
+.headerLinks{
+    padding-right:2em;
+    padding-bottom: auto;
+    align-content:bottom;
+}
+
+.headerLinks > a{
+    position: relative;
+    flex-grow: 1;
+    padding-right:0.2em;
+    padding-left:0.2em;
+    top:2.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.90em;
+    text-shadow: 0.4px 0.5px 1px; 
+}
+
+.escudoheader{
+    width:6em;
+    margin-left: 3em;
+    
+}
+
+/* /HEADER */
+
+/* BODY */
+.bodyContainer{
+   padding-top: 8.5em;
+}
+
+.AlbarracinPortada{
+    -webkit-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+    -moz-box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+    box-shadow: 0px 47px 132px -101px rgba(24,48,1,0.92);
+    width: 100%;
+
+}
+
+.ImagenAlbarracin{
+    width: 100%;
+    height: 800px;
+    
+    position: absolute;
+}
+
+.bodyContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.CitaIndex{
+    width: 80%;
+    margin: 70px auto;
+    text-justify: center;
+}
+
+.CitaIndex>p{
+
+   font-size: 35px;
+}
+
+
+  /*imagenes del carrusel*/
+  #portada2, #portada3{
+    display: none;
+  }
+  /* container de las imagnes del carrusel*/
+  .AlbarracinPortada{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+  }
+
+  
+
+    /*turismo*/
+    .turismo{
+        padding: 2%;
+    }
+    .btnTurismo{
+        padding: 2%;
+    }
+    .btnTurismo button{
+        padding: 2%;
+        border: 2px solid;
+        border-radius: 5%;
+        background-color: rgba(0, 76, 139, 0.37);
+        
+    }
+    .btnTurismo button:hover{
+        background-color: rgba(0, 76, 139, 0.815);
+        color: white;
+    }
+    .divGrid{
+        padding: 2%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto ;
+        grid-gap: 15px;
+        xpadding-left: 10%;
+        background-color: #084C61;
+        width: 60%;
+    }
+    .divGrid img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .gridItem div{
+        background-color: rgb(92, 167, 175);
+        padding:1%;
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+    }
+    .divTexto{
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    .gridItem p{
+        color:white;
+    }
+
+
+
+/********************* HTML TURISMO *********************/
+
+/********************* FIN HTML TURISMO *********************/
+
+/********************* HTML NOSOTROS *********************/
+/*fondo color*/
+#bodyNosotros{
+    xbackground-image: linear-gradient(315deg, #fcc3a5 1%, #fffaeb 86%); 
+}
+/* GALERIA DE FOTOS */
+.galeria{/*zona de la galeria*/
+    width: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+#fotos img {
+    width: 100% ;
+    height: auto;
+    object-fit: cover;
+    padding: 15px;
+    transition: 1s;
+}
+#fotos img:hover{
+    transform: scale(1.1);/* agrandamiento de la imagen*/
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.75);/*el shadow*/
+}
+
+#fotos{ /*EL GRID */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.textos>p{
+    text-align: justify;
+}
+
+/*imagenes verticales que ocupen dons lineas*/
+.vertical{
+    grid-row: span 2;
+}
+/*para meter imagenes que ocumen el doble*/
+.grande{
+    grid-row: span 2;
+    grid-column: span 2;;
+}
+
+h2{
+    position: relative;
+}
+#imgIzquierda{/*las imágenes que acompañan al texto en el lado izquierdo*/
+    float: left;
+    margin:1%;
+}
+#imgDerecha{/*las imágenes que acompañan al texto en el lado derecho*/
+    float: right;
+    margin:1%;
+}
+.textos{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    border-bottom: 2px solid var(--header-separator-color);
+}
+#general{
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 13%;
+    text-align: justify;
+    font-size: 30px;
+}
+/*div e imagenes que se muestran al clicar una img de la galeria*/
+#divImgSelect{
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.788);
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#exit{
+    width: 50px;
+    position: absolute;
+    right: 2%;
+    margin-top:2%;
+}
+#imgSelect{
+    width: 50%;
+    margin: 10%;
+}
+/* fin div img*/
+/********************* FIN HTML NOSOTROS *********************/
+
+/********************* HTML ALREDEDORES *********************/
+#tablaAlrededores{
+    width: 80%;
+    align-items: center;
+    border-collapse:separate; 
+    border-spacing:1em;
+}
+.tdImg{
+    width: 31%;
+    column-span: 2;
+}
+.tdParrafo{
+    background-color: rgba(128, 128, 128, 0.288);
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 1%;
+    width: 69%;
+}
+/********************* FIN HTML ALREDEDORES *********************/
+
+/********************* HTML CONTACTO *********************/
+    /*contacto*/
+    .form-horizontal{
+        margin-top: 1%;
+        align-self: center;
+        padding: 2%;
+        background-color:rgb(253, 241, 170);
+        width: 30%;
+    }
+    .contacto form input, .contacto form textarea{
+        border: none;
+        border-bottom: 2px solid rgb(172, 172, 172);
+    }
+/********************* FIN HTML CONTACTO *********************/
+
+  /*footer*/
+  .page-footer{
+padding-bottom: 1em;
+    width: 100%;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,199,87,0.94)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,199,87,0.94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffc757', GradientType=0 );
+    
+}
+
+
+.footericon{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    top: 0.4em;
+    margin-right: 1em;
+}
+
+
+
+
+/* MEDIA */
+
+
+@media only screen and (max-width: 895px) {
+    .headerLinks > a{
+        visibility: hidden;
+    
+    }
+
+    .header{
+        display:flex;
+        margin: auto;
+        width: 98%;
+        height: 7em;
+        border-bottom: none;
+    }
+  }
