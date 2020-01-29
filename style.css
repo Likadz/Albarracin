@@ -79,12 +79,6 @@ a:hover {
     font-size: 1.90em;
     text-shadow: 0.4px 0.5px 1px; 
 }
-/*.headerLinks > a:hover{
-    transition: 0.5s;
-    color: rgb(255, 166, 0);
-    xbackground: rgba(248, 170, 81, 0.822);
-    text-shadow: rgb(255, 228, 77) 0px 0px 20px, rgb(255, 228, 77) 0px 0px 30px, rgb(255, 228, 77) 0px 0px 40px, rgb(255, 228, 77) 0px 0px 50px, rgb(255, 228, 77) 0px 0px 75px;
-}*/
 .escudoheader{
     width:6em;
     margin-left: 3em;
@@ -142,57 +136,6 @@ a:hover {
     width: 100%;
     height: 800px;
   }
-
-    /*turismo*/
-    .turismo{
-        padding: 2%;
-    }
-    .btnTurismo{
-        padding: 2%;
-    }
-    .btnTurismo button{
-        padding: 2%;
-        border: 2px solid;
-        border-radius: 5%;
-        background-color: rgba(0, 76, 139, 0.37);
-        
-    }
-    .btnTurismo button:hover{
-        background-color: rgba(0, 76, 139, 0.815);
-        color: white;
-    }
-    .divGrid{
-        padding: 2%;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        grid-template-rows: auto ;
-        grid-gap: 15px;
-        xpadding-left: 10%;
-        background-color: #084C61;
-        width: 60%;
-    }
-    .divGrid img{
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    .gridItem div{
-        background-color: rgb(92, 167, 175);
-        padding:1%;
-        width: 200px;
-        height: 200px;
-        border-radius: 5%;
-    }
-    .divTexto{
-        position: absolute;
-        z-index: 999;
-        display: none;
-    }
-    .gridItem p{
-        color:white;
-    }
-
-
 
 /********************* HTML TURISMO *********************/
 #accordion {
@@ -326,7 +269,6 @@ h2{
     margin: 10%;
 }
 
-/* fin div img*/
 /********************* FIN HTML NOSOTROS *********************/
 
 /********************* HTML ALREDEDORES *********************/
@@ -382,8 +324,6 @@ h2{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffc757', GradientType=0);
    
 }
-
-
 .footericon {
     position: relative;
     height: 25px;
@@ -438,10 +378,10 @@ h2{
     
 
     .bodyContainer h2{
-        font-size: 24px;
+        font-size: 20px;
     }
     .bodyContainer h1{
-        font-size: 20px;
+        font-size: 24px;
     }
     .bodyContainer  h3{
         font-size: 18px;
@@ -452,6 +392,9 @@ h2{
 
     .tdParrafo p{
         font-size: 11px;
+    }
+    .CitaIndex p{
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 1000px) {

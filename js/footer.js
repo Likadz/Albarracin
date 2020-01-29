@@ -15,7 +15,7 @@ document.write(`
         <a class="footerflexcontent" href="twitter.com">Twitter</a> </p>
         <p> <img class="footericon" src="resources/fbicon.png" alt="">
         <a class="footerflexcontent" href="twitter.com">Facebook</a></p>
-        <p> <img class="footericon" src="resources/fbicon.png" alt="">
+        <p> <img class="footericon" src="resources/correo.png" alt="">
         <a class="footerflexcontent" href="twitter.com">Correo</a></p>
     </div>
   </div>

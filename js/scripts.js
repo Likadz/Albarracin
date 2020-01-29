@@ -27,6 +27,7 @@
       }, 1000);
   }
 
+  //funcion para 'iluminar' el enlace del menú superior
   function pagActual(pagina){
     $(pagina).css({"color":"rgb(255, 166, 0)",
     "text-shadow": 
@@ -35,19 +36,7 @@
 
 
   $(document).ready(function(){
-    //MENU SUPERIOR DE PÁGINAS (cambio de color)
-    //aColor=["black","blue","green","yellow","orange"]// array de colores para los background
-    // menú superior
-    /*$( ".headerLinks" ).children().hover(function(){
-      $(this).children().slideToggle(500).css("background-color",aColor[$(this).children().attr('id')]);
-    })
-    $(".headerLinks a").mouseover(function(){
-      $(this).css("text-shadow","4px 3px 6px rgb(189,126,0)");
-    })
-    $(".headerLinks a").mouseleave(function(){
-      $(this).css("text-shadow","");
-    });*/
-
+    
     /* SOBRE NOSOTROS */
     //img seleccion de la galeria
     $("#divImgSelect").hide();
@@ -79,7 +68,7 @@
       pagActual(paginaActual);
     })
 
-
+    //control para mostrar el menú en pantalla reducida
     var bMenuPeque=false;
     $("#imgMenuPeque img").on("click",function(){
       if(bMenuPeque){
