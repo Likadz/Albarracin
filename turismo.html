@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="pag_turismo">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <!--JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><!--este hace falta para los tabs de turismo...-->
+   
     <script src="js/scripts.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Albarracín</title>
 </head>
 <body>
@@ -20,17 +28,45 @@
     <script src="js/header.js"></script>
     <!-- /header -->
     <!-- content -->
-    <div id="tabs" >
-        <ul >
-            <li><a href="#tab-Historia">Historia</a></li>
-            <li><a href="#tab-Actualidad">En la actualidad</a></li>
-            <li><a href="#tab-Tradiciones">Tradiciones y artesanía</a></li>
-        </ul>
+    <div class="bodyContainer">
+        <div id="accordion">
+            <h3 class="accordiontitle">Servicios</h3>
+            <div><p class="accordiontext">Transporte</p>
+              <img class="accordion-image"id="accordiontransporte" style="object-fit: cover;"src="https://www.tokkoro.com/picsup/5749741-bus-wallpapers.jpg"  height="120px" alt="">
+              <p class="accordiontext">Hoteles</p>
+              <img class="accordion-image" id="accordionhoteles" style="object-fit: cover;"src="https://wallscapeinc.com/wp-content/uploads/2017/04/Hotel-room-wallpaper.jpg"  height="120px" alt="">
+              <p class="accordiontext">Restaurantes</p>
+              <img class="accordion-image" id="accordionrestaurantes" style="object-fit: cover;"src="https://c.wallhere.com/photos/f3/fb/indoors_bar-186862.jpg!d"  height="120px" alt="">
+              <p class="accordiontext">Farmacia</p>
+               <img class="accordion-image" id="accordionfarmacia" style="object-fit: cover;"src="https://lh3.googleusercontent.com/proxy/ijprHpy7DFPZl4mlUQLppdiRhgv-u1LdLVU7GRppULU28slIwtWIrLUBPC8N1JAu2lsNUu9jJT23_J2wrUNgkAPHvtW9Y8Nm365SkeAC4ZThiUNlXijdI396FXLgYx4hAIVJhzmUhY8utIpeVshFAct_hjSnO6ekcShQcdVZQJye-l72ifwIjJbucGwiosuxAf7tEGjqREvise2TcsSY17dy5ym8KlBF_NPzUDH7nxTNFdLtOp__xqr3BUvec7bpepjOkOo"  height="120px" alt="">
+                <p class="accordiontext">Biblioteca</p>
+                <img class="accordion-image" id="accordionbiblioteca" style="object-fit: cover;"src="https://c.wallhere.com/photos/71/7d/5472x3648_px_books_library_symetry-1326263.jpg!d"  height="120px" alt="">
+            </div>
+            <h3 class="accordiontitle">Actividades</h3> 
+            <div>
+                <p class="accordiontext">Paseos a Caballo</p>
+                <img class="accordion-image" id="accordioncaballo" style="object-fit: cover;"src="http://www.mascotahogar.com/1366x768/wallpaper-de-un-caballo-salvaje.jpg"  height="120px" alt="">
+                <p class="accordiontext">Senderos</p>
+                <img class="accordion-image" id="accordionsenderos" style="object-fit: cover;"src="resources/senderismo.jpg"  height="120px" alt="">
+               <p class="accordiontext">Escalada</p>
+                <img class="accordion-image" id="accordionescalada" style="object-fit: cover;"src="https://i.pinimg.com/originals/e6/f7/b1/e6f7b1c6fe25a01fe2925b830b55f17f.jpg"  height="120px" alt="">
+                <p class="accordiontext">Museo de juguetes</p>
+                <img class="accordion-image" id="accordionmuseojuguetes" style="object-fit: cover;"src="https://c.wallhere.com/photos/99/55/retro_60s_70s_games_museum_80s_toys_old-952108.jpg!d"  height="120px" alt="">
+                <p class="accordiontext">Centro de visitantes</p>
+                <img class="accordion-image" id="accordionvisitantes" style="object-fit: cover;"src="resources/visitantes.jpg"  height="120px" alt="">
+                <p class="accordiontext">Museo Pérez y Toyuela</p>
+                <img class="accordion-image" id="accordionmuseo" style="object-fit: cover;"src="resources/museo.jpg"  height="120px" alt="">
+                <p class="accordiontext">BTT</p>
+                <img class="accordion-image" id="accordionbtt" style="object-fit: cover;"src="https://wallpaperaccess.com/full/29004.jpg"  height="120px" alt="">
+                <p class="accordiontext">Tirolinas</p>
+                <img class="accordion-image" id="accordiontirolina" style="object-fit: cover;"src="https://www.pirineosur.es/archivos/image/tienda_productos/medias/326-1851-compraractividades-diariaspack-multiactividadbarranco-parque-de-tirolinas-.jpg"  height="120px" alt="">
+              </div>
+        </div>
     </div>
     <!-- /content -->
     <!-- footer -->
     <div class="footer">
-
+        <script src="js/footer.js"></script>
     </div>
     <!-- /footer -->
 </body>
