@@ -33,7 +33,9 @@
   function pagActual(pagina){
     $(pagina).css({"color":"rgb(255, 166, 0)",
     "text-shadow": 
-    "rgb(255, 228, 77) 0px 0px 20px, rgb(255, 228, 77) 0px 0px 30px, rgb(255, 228, 77) 0px 0px 40px, rgb(255, 228, 77) 0px 0px 50px, rgb(255, 228, 77) 0px 0px 75px"});
+    "rgb(255, 228, 77) 0px 0px 20px, rgb(255, 228, 77) 0px 0px 30px, rgb(255, 228, 77) 0px 0px 40px, rgb(255, 228, 77) 0px 0px 50px, rgb(255, 228, 77) 0px 0px 75px",
+    "font-weight":"bolder"
+    });
    }
 
 
@@ -50,16 +52,17 @@
     $(".headerLinks > a").bind("mouseenter click",function(){
       $(this).css({"color":"rgb(255, 166, 0)",
       "text-shadow": 
-      "rgb(255, 228, 77) 0px 0px 20px, rgb(255, 228, 77) 0px 0px 30px, rgb(255, 228, 77) 0px 0px 40px, rgb(255, 228, 77) 0px 0px 50px, rgb(255, 228, 77) 0px 0px 75px"}),
-      $(this).siblings().css({"color":"",
-      "text-shadow":""});
+      "rgb(255, 228, 77) 0px 0px 20px, rgb(255, 228, 77) 0px 0px 30px, rgb(255, 228, 77) 0px 0px 40px, rgb(255, 228, 77) 0px 0px 50px, rgb(255, 228, 77) 0px 0px 75px",
+      "font-style":"italic",
+      "text-decoration": "underline overline"}),
+
+      $(this).siblings().css({"color":"", "text-shadow":"","font-style":"","font-weight":"","text-decoration": ""}); //el resto de enlaces se quedan 'normales'
     })
 
     //al avandonar el hover de un menú reseteamos los css.
-    $(".headerLinks > a").bind("mouseleave",function(){
-      $(this).css({"color":"",
-      "text-shadow":""});
-      pagActual(paginaActual);
+    $(".headerLinks > a").bind("mouseleave",function(){//cuando salimos del enlace lo 'reseteamos'
+      $(this).css({"color":"", "text-shadow":"", "font-weight":"", "text-decoration": "", "font-style":""});
+      pagActual(paginaActual);//volvemos a llamar a la funcion para marcar el enlace de la página actual
     })
 
     /****** MENU REDUCIDO  *******/
